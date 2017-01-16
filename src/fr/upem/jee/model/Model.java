@@ -5,10 +5,9 @@ import javax.ejb.EJB;
 import javax.inject.Inject;
 
 @EJB
-@Statefull
 public class Model {
 	
 	@Inject
-	private final EntityManager em;
+	private EntityManager em;
 
 }
