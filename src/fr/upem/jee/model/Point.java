@@ -1,4 +1,4 @@
-package fr.upem.jee.core;
+package fr.upem.jee.model;
 
 public class Point {
 
