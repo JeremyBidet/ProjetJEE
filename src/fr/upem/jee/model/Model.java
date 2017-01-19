@@ -10,4 +10,8 @@ public class Model {
 	@Inject
 	private EntityManager em;
 
+	public EntityManager getEntityManager() {
+		return this.em;
+	}
+	
 }
