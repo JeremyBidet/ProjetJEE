@@ -35,5 +35,9 @@
   		<artifactId>hibernate-core</artifactId>
   		<version>5.2.6.Final</version>
   	</dependency>
+  	<dependency>
+  		<groupId>org.apache.tomcat.maven</groupId>
+  		<artifactId>tomcat7-maven-plugin</artifactId>
+  	</dependency>
   </dependencies>
 </project>
