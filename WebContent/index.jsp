@@ -11,12 +11,15 @@
 	xmlns:p="http://primefaces.org/ui">
 
 	<f:view>
+	
 		<h:head>
 			<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
-			<h:outputStylesheet library="css" name="Login.css"/>
+
 			<title>Login Page</title>
 		</h:head>
 		<h:body>
+			<h:outputStylesheet library="css" name="Login.css"/>
+		
 			<h:div class="login-page">
   				<h:div class="form">
     				<h:form class="register-form">
