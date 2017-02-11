@@ -1,13 +1,13 @@
 package fr.upem.jee.model;
 
-import javax.persistence.EntityManager;
 import javax.ejb.EJB;
-import javax.inject.Inject;
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
 
 @EJB
 public class Model {
 	
-	@Inject
+	@PersistenceContext(unitName="project")
 	private EntityManager em;
 
 	public EntityManager getEntityManager() {

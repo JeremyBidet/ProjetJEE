@@ -10,35 +10,34 @@
 	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
 	xmlns:p="http://primefaces.org/ui">
 
-	<f:view>
-	
-		<h:head>
-			<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<h:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+	<h:outputStylesheet library="css" name="Login.css"></h:outputStylesheet>
+	<title>Login Page</title>
+</h:head>
 
-			<title>Login Page</title>
-		</h:head>
-		<h:body>
-			<h:outputStylesheet library="css" name="Login.css"/>
-		
-			<h:div class="login-page">
-  				<h:div class="form">
-    				<h:form class="register-form">
-      					<h:input type="text" placeholder="name"/>
+<h:body>
+	<f:view>		
+		<h:div class="login_page">
+ 				<h:div class="form">
+   				<h:form class="register_form">
+     					<h:input type="text" placeholder="name"/>
+    					<h:input type="password" placeholder="password"/>
+     					<h:input type="text" placeholder="email address"/>
+     					<h:button>create</h:button>
+     					<p class="message">Already registered? <a href="#">Sign In</a></p>
+   				</h:form>
+   				<h:form class="login_form">
+     					<h:input type="text" placeholder="username"/>
      					<h:input type="password" placeholder="password"/>
-      					<h:input type="text" placeholder="email address"/>
-      					<h:button>create</h:button>
-      					<p class="message">Already registered? <a href="#">Sign In</a></p>
-    				</h:form>
-    				<h:form class="login-form">
-      					<h:input type="text" placeholder="username"/>
-      					<h:input type="password" placeholder="password"/>
-      					<h:button>login</h:button>
-      					<p class="message">Not registered? <a href="#">Create an account</a></p>
-    				</h:form>
-  				</h:div>
-			</h:div>
-			<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-			<script src="js/login.js"></script>
-		</h:body>
+     					<h:button>login</h:button>
+     					<p class="message">Not registered? <a href="#">Create an account</a></p>
+   				</h:form>
+ 				</h:div>
+		</h:div>
+		<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+		<script src="js/login.js"></script>
 	</f:view>
+</h:body>
+
 </html>
