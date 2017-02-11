@@ -1,5 +1,4 @@
 <!-- auto-generated with eclipse wizard: JSF (xhtml) page template -->
-
 <?xml version="1.0" encoding="ISO-8859-1" ?>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
@@ -11,33 +10,32 @@
 	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
 	xmlns:p="http://primefaces.org/ui">
 
-<f:view>
-<h:head>
-	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
-	<h:outputStylesheet library="css" name="style.css"/>
-	<title>Login Page</title>
-</h:head>
-
-<h:body>
-	<h:form id="login_form">
-		<h1><h:outputText value="Title"/></h1>
-		
-		<p:growl id="growl" showDetail="false" sticky="false" life="3000" />
-		
-		<h:panelGrid id="login_panel" columns="1" cellpadding="5">
-			<p:inputText placeholder="Username" id="username" required="true" value="#{authentication.username}"
-					requiredMessage="Username field cannot be empty"/>
-		
-			<p:password placeholder="Password" id="password" required="true" value="#{authentication.password}"
-		            requiredMessage="Password field cannot be empty"/>
-		
-			<p:inputText placeholder="RPPS number" id="rpps" required="false" value="#{authentication.rpps}"
-					requiredMessage="RPPS number cannot be empty"/>
-		
-			<p:commandButton value="Login" update="login_form" actionListener="#{authentication.login}"/>
-		</h:panelGrid>
-	</h:form>
-</h:body>
-</f:view>
-
+	<f:view>
+		<h:head>
+			<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+			<h:outputStylesheet library="css" name="Login.css"/>
+			<title>Login Page</title>
+		</h:head>
+		<h:body>
+			<h:div class="login-page">
+  				<h:div class="form">
+    				<h:form class="register-form">
+      					<h:input type="text" placeholder="name"/>
+     					<h:input type="password" placeholder="password"/>
+      					<h:input type="text" placeholder="email address"/>
+      					<h:button>create</h:button>
+      					<p class="message">Already registered? <a href="#">Sign In</a></p>
+    				</h:form>
+    				<h:form class="login-form">
+      					<h:input type="text" placeholder="username"/>
+      					<h:input type="password" placeholder="password"/>
+      					<h:button>login</h:button>
+      					<p class="message">Not registered? <a href="#">Create an account</a></p>
+    				</h:form>
+  				</h:div>
+			</h:div>
+			<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+			<script src="js/login.js"></script>
+		</h:body>
+	</f:view>
 </html>
