@@ -31,10 +31,11 @@ public class Login {
     public Login() {
 		// TODO Auto-generated constructor stub
 	}
+    
 	public String connect(){
 		FacesContext context = FacesContext.getCurrentInstance();
 		context.addMessage(null, new FacesMessage("Successful",  "Your message: " + login + " "+ password) );
-       System.out.println("test " +login + password);
+		System.out.println("test " +login + password);
 		return "";
 	}
 	
