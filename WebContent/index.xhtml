@@ -18,10 +18,11 @@
 			<div class="login-page">
 				<div class="form">
 			    	<h:form class="register-form">
-			      		<p:inputText placeholder="name"/>
-			      		<p:password  placeholder="password"/>
-			      		<p:inputText placeholder="email address"/>
-			      		<p:button value="Register" />
+			      		<p:inputText placeholder="login" value="#{register.login}"/>
+			      		<p:password  placeholder="password" value="#{register.password}"/>
+			      		<p:password  placeholder="verify password" value="#{register.password2}"/>
+			      		<p:inputText placeholder="email address" value="#{register.email}"/>
+			      		<p:commandButton value="Register" update="growl" action="#{register.register}" />
 			      		<p class="message">Already registered? <a href="#">Sign In</a></p>
 			    	</h:form>
 			    	<h:form class="login-form">
