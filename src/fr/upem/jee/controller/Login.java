@@ -32,11 +32,10 @@ public class Login {
 		// TODO Auto-generated constructor stub
 	}
     
-	public String connect(){
-		FacesContext context = FacesContext.getCurrentInstance();
-		context.addMessage(null, new FacesMessage("Successful",  "Your message: " + login + " "+ password) );
-		System.out.println("test " +login + password);
-		return "";
+	public void login(){
+		//TODO : user = getUser(login) from DB if user null then growl
+		//TODO : if password == getPassword(User) if false then growl
+		//TODO : if all true redirect to main page
 	}
 	
 
