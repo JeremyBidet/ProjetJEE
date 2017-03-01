@@ -35,5 +35,10 @@
   		<artifactId>hibernate-core</artifactId>
   		<version>5.2.6.Final</version>
   	</dependency>
+  	<dependency>
+  		<groupId>org.apache.tomcat</groupId>
+  		<artifactId>tomcat</artifactId>
+  		<version>9.0.0.M1</version>
+  	</dependency>
   </dependencies>
 </project>
