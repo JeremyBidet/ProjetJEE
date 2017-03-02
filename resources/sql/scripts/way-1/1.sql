@@ -37,8 +37,8 @@ CREATE TABLE IF NOT EXISTS `cafe` (
 	`address` text COLLATE latin1_general_ci NOT NULL,
 	`district` text COLLATE latin1_general_ci NOT NULL,
 	`counter_price` decimal(4,2) NOT NULL,
-	`hall_price` decimal(4,2) NOT NULL,
-	`terrace_price` decimal(4,2) NOT NULL,
+	`indoor_price` decimal(4,2) NOT NULL,
+	`outdoor_price` decimal(4,2) NOT NULL,
 	`coord` point NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
 ALTER TABLE `cafe`
